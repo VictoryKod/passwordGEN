@@ -12,12 +12,11 @@ class App(ctk.CTk):
         self.geometry('460x700')
         self.title('Password generator')
         self.resizable(False, False)
-
-        # Конфигурация сетки для растяжения
+ 
         self.grid_rowconfigure(2, weight=1)  # Рамка с настройками будет растягиваться
         self.grid_columnconfigure(0, weight=1)
 
-        # Логотип
+        # Лого
         self.logo = ctk.CTkImage(dark_image=Image.open('logo_gen.png'), size=(460, 400))
         self.logo_label = ctk.CTkLabel(master=self, text="", image=self.logo)
         self.logo_label.grid(row=0, column=0)
@@ -45,7 +44,7 @@ class App(ctk.CTk):
                                                     number_of_steps=100, command=self.slider_event)
         self.password_lenght_slider.grid(row=0, column=0, columnspan=3, padx=(10, 10), pady=(10, 0), sticky='ew')
 
-        # Поле для отображения длины пароля (возможность ввода с клавиатуры)
+        # Поле для отображения длины пароля (+возможность ввода с клавиатуры)
         self.password_lenght_entry = ctk.CTkEntry(master=self.settings_frame, width=50, height=35)
         self.password_lenght_entry.grid(row=0, column=3, padx=(10, 10), pady=(10, 0), sticky='we')
 
