@@ -18,7 +18,7 @@ A simple, customizable password generator built using Python and the `tkinter` a
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/password-generator.git
+    git clone https://github.com/VictoryKod/passwordGEN
     ```
 
 2. Install the required dependencies:
